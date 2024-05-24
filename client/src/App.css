@@ -1,87 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Code+Pro:wght@300&display=swap');
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
 }
 h1 {
   text-align: center;
   margin: 3rem;
 }
 section {
-    padding: 20px;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 40px auto;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px auto;
 }
 section ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  font-weight: bolder;
 }
 section ul li {
-    list-style: none;
-    background: #eee;
-    padding: 12px 20px;
-    margin: 5px;
-    letter-spacing: 1px;
-    cursor: pointer;
+  list-style: none;
+  background: #eee;
+  padding: 12px 20px;
+  margin: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 section ul li.active {
-    background: #1ca523;
-    color: #fff;
+  background: #1ca523;
+  color: #fff;
 }
 .images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .images .item {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin: 5px;
-    display: block;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  display: block;
 }
 .images .item.hide {
-    display: none;
+  display: none;
 }
 .images .item img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    border: 2px solid black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border: 2px solid black;
 }
- .images .item img:hover {
-    transform: scale(1.6);
-    z-index: 2;
- }
+.images .item img:hover {
+  position: absolute;
+  transform: scale(1.6);
+  z-index: 2;
+}
+.images .item {
+  margin: 1rem;
+}
 .input-search {
-    margin: 2rem;
-    text-align: center;
+  margin: 2rem;
+  text-align: center;
 }
 
 .delete-btn {
-    margin: 20px;
-    background-color: brown;
-    color: white;
-    padding: 5px;
+  margin: 20px;
+  background-color: brown;
+  color: white;
+  padding: 5px;
 }
 .addItem-btn {
-    width: 40%;
-    margin: 2rem 0 2rem 30%;
-    padding: 10px;
+  width: 40%;
+  margin: 2rem 0 2rem 30%;
+  padding: 10px;
 }
